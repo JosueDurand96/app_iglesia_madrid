@@ -72,15 +72,18 @@
     android:id="@+id/btnIngresar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+        style="?android:textAppearanceSmall"
+        android:background="@drawable/boton_login"
     android:layout_alignEnd="@+id/chb_mostrarcontraseña"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
+
     android:layout_alignRight="@+id/chb_mostrarcontraseña"
     android:layout_below="@+id/textView2"
     android:layout_marginTop="0dp"
-
+        android:textStyle="bold"
     android:text="Iniciar Sesión"
-    android:textColor="?attr/colorError"
+    android:textColor="#ffff"
     android:textSize="20sp" />
 
         <TextView
@@ -96,17 +99,20 @@
 
         <Button
             android:id="@+id/btnRegistrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+
             android:layout_below="@+id/textView4"
 
             android:layout_alignEnd="@+id/chb_mostrarcontraseña"
             android:layout_alignRight="@+id/chb_mostrarcontraseña"
             android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo"
 
-            android:text="Registrarse"
-            android:textColor="?attr/colorError"
+            android:text="Únete"
+            android:textColor="@android:color/background_light"
             android:textSize="20sp" />
+
     </LinearLayout>
 
 
