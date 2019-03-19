@@ -1,4 +1,4 @@
-package luzdelmundoapp.madridoficialapp;
+package luzdelmundoapp.madridoficialapp.Adapter;
 
 
 import android.content.Context;
@@ -11,6 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import luzdelmundoapp.madridoficialapp.Principal.LoginActivity;
+
+import luzdelmundoapp.madridoficialapp.R;
 
 public class SlideAdapter extends PagerAdapter {
     Context context;
@@ -77,11 +81,11 @@ public class SlideAdapter extends PagerAdapter {
         description.setText(lst_description[position]);
         container.addView(view);
         imgslide.setOnClickListener(new View.OnClickListener() {
-            public Class<LoginActivity> LoginActivity;
+            public Class<luzdelmundoapp.madridoficialapp.Principal.LoginActivity> LoginActivity;
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context,LoginActivity.class);
+                Intent i = new Intent(context, LoginActivity.class);
                 context.startActivity(i);
             }
         });
